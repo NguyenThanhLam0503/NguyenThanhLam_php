@@ -1,0 +1,33 @@
+package Listing;
+
+import java.awt.GridLayout;
+
+import javax.swing.ImageIcon;
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+
+public class Listing_12_8 extends JFrame{
+	private ImageIcon usIcon = new ImageIcon("image/us.gif");
+	private ImageIcon myIcon = new ImageIcon("image/my.jpg");
+	 private ImageIcon frIcon = new ImageIcon("image/fr.gif");
+	 private ImageIcon ukIcon = new ImageIcon("image/uk.gif");
+	 public Listing_12_8() {
+		 setLayout(new GridLayout(1, 4, 5, 5));
+		 add(new JLabel(usIcon));
+		 add(new JLabel(myIcon));
+		 add(new JButton(frIcon));
+		 add(new JButton(ukIcon));
+	 }
+	 
+	  /** Main method */
+	  public static void main(String[] args) {
+		  Listing_12_8 frame = new Listing_12_8();
+	  frame.setTitle("TestImageIcon");
+	  frame.setSize(200, 200);
+	  frame.setLocationRelativeTo(null); // Center the frame
+	  frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+	  frame.setVisible(true);
+	
+	 }
+}
